@@ -38,7 +38,7 @@ modules:
       # Required for icons, desktop file and appstream file
       - type: git
         url: https://github.com/Bambosh/unofficial-homestuck-collection.git
-        branch: main
+        commit: 1a975c8
       # Wrapper to launch the app
       - type: script
         dest-filename: run.sh
