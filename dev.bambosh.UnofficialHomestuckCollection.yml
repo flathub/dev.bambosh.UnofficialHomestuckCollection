@@ -34,7 +34,7 @@ modules:
     sources:
       - type: file
         url: https://github.com/GiovanH/unofficial-homestuck-collection/releases/download/v2.5.1/unofficial-homestuck-collection-2.5.1.tar.gz
-        sha256: E60BC6710CF4E0852FC375D33699D0DCDF69707FF942753F31742FABB2A867D0
+        sha256: e60bc6710cf4e0852fc375d33699d0dcdf69707ff942753f31742fabb2a867d0
       # Required for icons, desktop file and appstream file
       - type: git
         url: https://github.com/Bambosh/unofficial-homestuck-collection.git
