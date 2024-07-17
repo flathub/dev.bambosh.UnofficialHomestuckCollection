@@ -1,9 +1,9 @@
 app-id: dev.bambosh.UnofficialHomestuckCollection
 runtime: org.freedesktop.Platform
-runtime-version: "22.08"
+runtime-version: "23.08"
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: "22.08"
+base-version: "23.08"
 command: unofficial-homestuck-collection
 separate-locales: false
 finish-args:
@@ -37,8 +37,8 @@ modules:
         sha256: e60bc6710cf4e0852fc375d33699d0dcdf69707ff942753f31742fabb2a867d0
       # Required for icons, desktop file and appstream file
       - type: git
-        url: https://github.com/Bambosh/unofficial-homestuck-collection.git
-        commit: 3f44ba5
+        url: https://github.com/GiovanH/unofficial-homestuck-collection.git
+        commit: c981b0b
       # Wrapper to launch the app
       - type: script
         dest-filename: unofficial-homestuck-collection
