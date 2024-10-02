@@ -39,7 +39,6 @@ modules:
       - type: git
         url: https://github.com/GiovanH/unofficial-homestuck-collection.git
         commit: "5620e9cfc7df008958267eafe71c2d68c4cb2305"
-      # Wrapper to launch the app
       - type: script
         dest-filename: unofficial-homestuck-collection
         commands:
