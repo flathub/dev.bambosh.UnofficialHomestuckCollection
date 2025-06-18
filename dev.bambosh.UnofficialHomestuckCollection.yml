@@ -15,7 +15,7 @@ finish-args:
   - --filesystem=home
 build-options:
   env:
-    pkgver: 2.6.6
+    pkgver: 2.6.7
 modules:
   - name: unofficial-homestuck-collection
     buildsystem: simple
@@ -33,12 +33,12 @@ modules:
       - install -Dm755 unofficial-homestuck-collection ${FLATPAK_DEST}/bin
     sources:
       - type: file
-        url: "https://github.com/GiovanH/unofficial-homestuck-collection/releases/download/v2.6.6/unofficial-homestuck-collection-2.6.6.tar.gz"
-        sha256: "a60466f8d2b5033a09dd7d7d6626bd6e5e72cd26f5de504c4b13ffb6e43da5ff"
+        url: "https://github.com/GiovanH/unofficial-homestuck-collection/releases/download/v2.6.7/unofficial-homestuck-collection-2.6.7.tar.gz"
+        sha256: "b98f037d480e371feeeb400124aae3fedb1a9f52a15acc29af7d40fc44be99cd"
       # Required for icons, desktop file and appstream file
       - type: git
         url: https://github.com/GiovanH/unofficial-homestuck-collection.git
-        commit: "7e27b1e48c31ff5319c5ac6dba84370c6aabc261"
+        commit: "30b73506e63cd22ddfa3caec01e357e520d9c471"
       # Wrapper to launch the app
       - type: script
         dest-filename: unofficial-homestuck-collection
