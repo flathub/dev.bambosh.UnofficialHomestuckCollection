@@ -15,7 +15,7 @@ finish-args:
   - --filesystem=home
 build-options:
   env:
-    pkgver: 2.6.7
+    pkgver: 2.7.2
 modules:
   - name: unofficial-homestuck-collection
     buildsystem: simple
@@ -33,14 +33,15 @@ modules:
       - install -Dm755 unofficial-homestuck-collection ${FLATPAK_DEST}/bin
     sources:
       - type: file
-        url: "https://github.com/GiovanH/unofficial-homestuck-collection/releases/download/v2.6.7/unofficial-homestuck-collection-2.6.7.tar.gz"
-        sha256: "b98f037d480e371feeeb400124aae3fedb1a9f52a15acc29af7d40fc44be99cd"
+        url: "https://github.com/GiovanH/unofficial-homestuck-collection/releases/download/v2.7.2/unofficial-homestuck-collection-2.7.2.tar.gz"
+        sha256: "4747e41ca8d6898ee1936fbe18ec82521c1fc456544a93aca8fd9de43a93db19"
       # Required for icons, desktop file and appstream file
       - type: git
         url: https://github.com/GiovanH/unofficial-homestuck-collection.git
-        commit: "30b73506e63cd22ddfa3caec01e357e520d9c471"
+        commit: "5b0866c975028cc8932c9da7159ffca201a519b1"
       # Wrapper to launch the app
       - type: script
         dest-filename: unofficial-homestuck-collection
         commands:
           - zypak-wrapper.sh /app/unofficial-homestuck-collection/unofficial-homestuck-collection --disable-gpu-sandbox "$@"
+
