@@ -1,9 +1,9 @@
 app-id: dev.bambosh.UnofficialHomestuckCollection
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: "24.08"
+base-version: "25.08"
 command: unofficial-homestuck-collection
 separate-locales: false
 finish-args:
@@ -28,17 +28,17 @@ modules:
         for i in 16x16 24x24 32x32 48x48 64x64 128x128 256x256 512x512; do
           install -Dm644 build/icons/$i.png /app/share/icons/hicolor/$i/apps/dev.bambosh.UnofficialHomestuckCollection.png
         done
-      - install -Dm644 build/dev.bambosh.UnofficialHomestuckCollection.metainfo.xml /app/share/metainfo/dev.bambosh.UnofficialHomestuckCollection.metainfo.xml
-      - install -Dm644 build/dev.bambosh.UnofficialHomestuckCollection.desktop /app/share/applications/dev.bambosh.UnofficialHomestuckCollection.desktop
+      - install -Dm644 build/dev.bambosh.UnofficialHomestuckCollection.metainfo.xml -t /app/share/metainfo/
+      - install -Dm644 build/dev.bambosh.UnofficialHomestuckCollection.desktop -t /app/share/applications/
       - install -Dm755 unofficial-homestuck-collection ${FLATPAK_DEST}/bin
     sources:
       - type: file
-        url: "https://github.com/GiovanH/unofficial-homestuck-collection/releases/download/v2.8.1/unofficial-homestuck-collection-2.8.1.tar.gz"
-        sha256: "8933af99ad62a209bf6bf7ac40e9e3ae385ee80bf81f4ec01c12d6ce6674f34b"
+        url: https://github.com/GiovanH/unofficial-homestuck-collection/releases/download/v2.8.1/unofficial-homestuck-collection-2.8.1.tar.gz
+        sha256: 8933af99ad62a209bf6bf7ac40e9e3ae385ee80bf81f4ec01c12d6ce6674f34b
       # Required for icons, desktop file and appstream file
       - type: git
         url: https://github.com/GiovanH/unofficial-homestuck-collection.git
-        commit: "78c0a35a9b57290151fe986b652237755af7646b"
+        commit: 78c0a35a9b57290151fe986b652237755af7646b
       # Wrapper to launch the app
       - type: script
         dest-filename: unofficial-homestuck-collection
