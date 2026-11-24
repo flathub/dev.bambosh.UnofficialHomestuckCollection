@@ -39,7 +39,7 @@ modules:
       # Required for icons, desktop file and appstream file
       - type: git
         url: https://github.com/GiovanH/unofficial-homestuck-collection.git
-        commit: "78c0a35a9b57290151fe986b652237755af7646b"
+        commit: "a4a3d1b26964dc7f46ee30575d997c8ee9f23fa9"
       # Wrapper to launch the app
       - type: script
         dest-filename: unofficial-homestuck-collection
