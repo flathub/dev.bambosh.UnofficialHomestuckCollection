@@ -1,9 +1,9 @@
 app-id: dev.bambosh.UnofficialHomestuckCollection
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: &runtime-version "26.08"
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: "24.08"
+base-version: *runtime-version
 command: unofficial-homestuck-collection
 separate-locales: false
 finish-args:
@@ -13,6 +13,7 @@ finish-args:
   - --share=network
   - --device=dri
   - --filesystem=home
+  - --env=ELECTRON_TRASH=gio
 build-options:
   env:
     pkgver: 2.8.1
@@ -43,5 +44,4 @@ modules:
       - type: script
         dest-filename: unofficial-homestuck-collection
         commands:
-          - zypak-wrapper.sh /app/unofficial-homestuck-collection/unofficial-homestuck-collection --disable-gpu-sandbox "$@"
-
+          - zypak-wrapper.sh /app/unofficial-homestuck-collection/unofficial-homestuck-collection "$@"
